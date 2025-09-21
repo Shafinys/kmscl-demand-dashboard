@@ -1,0 +1,57 @@
+/* Main font and background */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F0F2F6;
+}
+
+/* Style for the KPI metric cards */
+[data-testid="stMetric"] {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Style for KPI labels (e.g., "Total Inventory Value") */
+[data-testid="stMetricLabel"] {
+    font-size: 1.1rem;
+    color: #4A5568; /* Gray-700 */
+}
+
+/* Style for KPI values (the large numbers) */
+[data-testid="stMetricValue"] {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1A202C; /* Gray-900 */
+}
+
+/* Style for tabs */
+.stTabs [data-baseweb="tab-list"] {
+	gap: 24px;
+}
+
+.stTabs [data-baseweb="tab"] {
+	height: 50px;
+    white-space: pre-wrap;
+	background-color: transparent;
+	border-radius: 4px 4px 0px 0px;
+	gap: 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.stTabs [aria-selected="true"] {
+  	background-color: #FFFFFF;
+}
+
+/* Custom button styling if needed */
+.stButton>button {
+    border-radius: 0.5rem;
+    background-color: #2563EB; /* Blue-600 */
+    color: white;
+    border: none;
+}
+.stButton>button:hover {
+    background-color: #1D4ED8; /* Blue-700 */
+}

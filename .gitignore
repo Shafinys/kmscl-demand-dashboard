@@ -1,0 +1,10 @@
+# Ignore data files
+synthetic_drug_demand_data.csv
+
+# Ignore HTML file
+index.html
+
+# Ignore trial files
+hierarchical_forecasting_final.py
+dashboard_1.py
+demanforecasting_trials.ipynb

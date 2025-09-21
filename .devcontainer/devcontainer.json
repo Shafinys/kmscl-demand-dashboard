@@ -1,0 +1,32 @@
+// This is the configuration file for the VS Code Dev Container.
+{
+    // A descriptive name for your development container.
+    "name": "Demand Forecasting Dashboard",
+
+    // Tells VS Code to use the existing Dockerfile in the parent directory.
+    "dockerFile": "../Dockerfile",
+
+    // This section maps ports from the container to your local machine.
+    // So, when Streamlit runs on port 8501 inside the container,
+    // you can access it at http://localhost:8501 in your local browser.
+    "forwardPorts": [8501,8080],
+
+    // A command to run after the container is created.
+    // This will automatically install the recommended Python extension for you inside the container.
+    "postCreateCommand": "pip install --upgrade pip",
+
+    // VS Code specific settings and extensions.
+    "customizations": {
+        "vscode": {
+            // A list of extensions to automatically install inside the container.
+            "extensions": [
+                "ms-python.python"
+            ],
+            // Settings to apply specifically within this container.
+            "settings": {
+                // Tells the Python extension where to find the Python interpreter.
+                "python.defaultInterpreterPath": "/usr/local/bin/python"
+            }
+        }
+    }
+}
